@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from './src/screens/Welcome';
 import SignIn from './src/screens/SignIn';
+import Home from './src/screens/Home';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         }}>
         <Stack.Screen name='Splash' component={Welcome} />
         <Stack.Screen name='SignIn' component={SignIn} />
+        <Stack.Screen name='Home' component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
